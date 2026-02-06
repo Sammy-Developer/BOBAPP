@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Web_App_2\\Web_App_2\\Web_App_2.csproj": {}
+    "D:\\Kayreed\\BOBAPP\\Web_App_2\\Web_App_2.csproj": {}
   },
   "projects": {
-    "D:\\Web_App_2\\BOB.Shared\\BOB.Shared.csproj": {
+    "D:\\Kayreed\\BOBAPP\\BOB.Shared\\BOB.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Web_App_2\\BOB.Shared\\BOB.Shared.csproj",
+        "projectUniqueName": "D:\\Kayreed\\BOBAPP\\BOB.Shared\\BOB.Shared.csproj",
         "projectName": "BOB.Shared",
-        "projectPath": "D:\\Web_App_2\\BOB.Shared\\BOB.Shared.csproj",
+        "projectPath": "D:\\Kayreed\\BOBAPP\\BOB.Shared\\BOB.Shared.csproj",
         "packagesPath": "C:\\Users\\sammy\\.nuget\\packages\\",
-        "outputPath": "D:\\Web_App_2\\BOB.Shared\\obj\\",
+        "outputPath": "D:\\Kayreed\\BOBAPP\\BOB.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -414,14 +414,14 @@
         }
       }
     },
-    "D:\\Web_App_2\\Web_App_2\\Web_App_2.csproj": {
+    "D:\\Kayreed\\BOBAPP\\Web_App_2\\Web_App_2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Web_App_2\\Web_App_2\\Web_App_2.csproj",
+        "projectUniqueName": "D:\\Kayreed\\BOBAPP\\Web_App_2\\Web_App_2.csproj",
         "projectName": "Web_App_2",
-        "projectPath": "D:\\Web_App_2\\Web_App_2\\Web_App_2.csproj",
+        "projectPath": "D:\\Kayreed\\BOBAPP\\Web_App_2\\Web_App_2.csproj",
         "packagesPath": "C:\\Users\\sammy\\.nuget\\packages\\",
-        "outputPath": "D:\\Web_App_2\\Web_App_2\\obj\\",
+        "outputPath": "D:\\Kayreed\\BOBAPP\\Web_App_2\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -443,8 +443,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\Web_App_2\\BOB.Shared\\BOB.Shared.csproj": {
-                "projectPath": "D:\\Web_App_2\\BOB.Shared\\BOB.Shared.csproj"
+              "D:\\Kayreed\\BOBAPP\\BOB.Shared\\BOB.Shared.csproj": {
+                "projectPath": "D:\\Kayreed\\BOBAPP\\BOB.Shared\\BOB.Shared.csproj"
               }
             }
           }

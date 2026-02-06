@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Web_App_2\\BOB.Server\\BOB.Server.csproj": {}
+    "D:\\Kayreed\\BOBAPP\\BOB.Server\\BOB.Server.csproj": {}
   },
   "projects": {
-    "D:\\Web_App_2\\BOB.Server\\BOB.Server.csproj": {
+    "D:\\Kayreed\\BOBAPP\\BOB.Server\\BOB.Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Web_App_2\\BOB.Server\\BOB.Server.csproj",
+        "projectUniqueName": "D:\\Kayreed\\BOBAPP\\BOB.Server\\BOB.Server.csproj",
         "projectName": "BOB.Server",
-        "projectPath": "D:\\Web_App_2\\BOB.Server\\BOB.Server.csproj",
+        "projectPath": "D:\\Kayreed\\BOBAPP\\BOB.Server\\BOB.Server.csproj",
         "packagesPath": "C:\\Users\\sammy\\.nuget\\packages\\",
-        "outputPath": "D:\\Web_App_2\\BOB.Server\\obj\\",
+        "outputPath": "D:\\Kayreed\\BOBAPP\\BOB.Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -33,8 +33,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "D:\\Web_App_2\\BOB.Shared\\BOB.Shared.csproj": {
-                "projectPath": "D:\\Web_App_2\\BOB.Shared\\BOB.Shared.csproj"
+              "D:\\Kayreed\\BOBAPP\\BOB.Shared\\BOB.Shared.csproj": {
+                "projectPath": "D:\\Kayreed\\BOBAPP\\BOB.Shared\\BOB.Shared.csproj"
               }
             }
           }
@@ -55,6 +55,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Cryptography.KeyDerivation": {
+              "target": "Package",
+              "version": "[10.0.2, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.12, )"
@@ -68,6 +72,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[9.0.12, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.15.0, )"
             }
           },
           "imports": [
@@ -533,14 +541,14 @@
         }
       }
     },
-    "D:\\Web_App_2\\BOB.Shared\\BOB.Shared.csproj": {
+    "D:\\Kayreed\\BOBAPP\\BOB.Shared\\BOB.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Web_App_2\\BOB.Shared\\BOB.Shared.csproj",
+        "projectUniqueName": "D:\\Kayreed\\BOBAPP\\BOB.Shared\\BOB.Shared.csproj",
         "projectName": "BOB.Shared",
-        "projectPath": "D:\\Web_App_2\\BOB.Shared\\BOB.Shared.csproj",
+        "projectPath": "D:\\Kayreed\\BOBAPP\\BOB.Shared\\BOB.Shared.csproj",
         "packagesPath": "C:\\Users\\sammy\\.nuget\\packages\\",
-        "outputPath": "D:\\Web_App_2\\BOB.Shared\\obj\\",
+        "outputPath": "D:\\Kayreed\\BOBAPP\\BOB.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -580,6 +588,10 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Cryptography.KeyDerivation": {
+              "target": "Package",
+              "version": "[10.0.2, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.12, )"
@@ -611,6 +623,10 @@
             "Microsoft.Extensions.Configuration.Json": {
               "target": "Package",
               "version": "[10.0.2, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[8.15.0, )"
             },
             "System.Runtime": {
               "target": "Package",
