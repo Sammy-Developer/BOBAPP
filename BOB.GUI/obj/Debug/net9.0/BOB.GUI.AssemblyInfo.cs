@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BOB.GUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+886a2286ac5492598c5c26ae059ce57b7c3cf71e")]
 [assembly: System.Reflection.AssemblyProductAttribute("BOB.GUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BOB.GUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
