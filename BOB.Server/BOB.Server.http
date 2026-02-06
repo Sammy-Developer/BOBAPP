@@ -1,0 +1,6 @@
+@BOB.Server_HostAddress = http://localhost:5234
+
+GET {{BOB.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,5 @@
+D:\Web_App_2\BOB.Shared\obj\Debug\net9.0\BOB.Shared.csproj.AssemblyReference.cache
+D:\Web_App_2\BOB.Shared\obj\Debug\net9.0\BOB.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Web_App_2\BOB.Shared\obj\Debug\net9.0\BOB.Shared.AssemblyInfoInputs.cache
+D:\Web_App_2\BOB.Shared\obj\Debug\net9.0\BOB.Shared.AssemblyInfo.cs
+D:\Web_App_2\BOB.Shared\obj\Debug\net9.0\BOB.Shared.csproj.CoreCompileInputs.cache

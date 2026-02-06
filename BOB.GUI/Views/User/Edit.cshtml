@@ -1,0 +1,29 @@
+﻿@model BOB.Shared.Entities.Users
+@{
+    ViewData["Title"] = "Edit User";
+}
+
+<h2>Edit User</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" name="id" value="@Model.Id" />
+
+    <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" name="username" class="form-control" value="@Model.Username" required />
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">New Password (leave blank to keep current)</label>
+        <input type="password" name="password" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label for="company" class="form-label">Company</label>
+        <input type="text" name="company" class="form-control" value="@Model.Company" />
+    </div>
+    <div class="mb-3">
+        <label for="branch" class="form-label">Branch</label>
+        <input type="text" name="branch" class="form-control" value="@Model.Branch" />
+    </div>
+    <button type="submit" class="btn btn-success">Save Changes</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

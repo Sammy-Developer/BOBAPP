@@ -1,0 +1,2 @@
+D:\Web_App_2\BOB.Shared\obj\Debug\BOB.Shared.csproj.AssemblyReference.cache
+D:\Web_App_2\BOB.Shared\obj\Debug\BOB.Shared.csproj.CoreCompileInputs.cache

@@ -1,0 +1,133 @@
+﻿@model IEnumerable<BOB.Shared.Entities.Users>
+@{
+    ViewData["Title"] = "Users";
+}
+
+<div class="container mt-4">
+    <h2>Users</h2>
+    <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addUserModal">Add User</button>
+
+    <table class="table table-bordered table-striped table-hover">
+        <thead class="table-dark">
+            <tr>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Company</th>
+                <th>Branch</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.Username</td>
+                    <td>@user.Company</td>
+                    <td>@user.Branch</td>
+                    <td>
+                        <button class="btn btn-warning btn-sm" data-bs-toggle="modal" data-bs-target="#editUserModal-@user.Id">Edit</button>
+                        <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#deleteUserModal-@user.Id">Delete</button>
+                    </td>
+                </tr>
+
+                <!-- Edit Modal -->
+                <div class="modal fade" id="editUserModal-@user.Id" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <form asp-action="Edit" method="post">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Edit User: @user.Username</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <input type="hidden" name="id" value="@user.Id" />
+                                    <div class="mb-3">
+                                        <label>Username</label>
+                                        <input type="text" name="username" class="form-control" value="@user.Username" required />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label>New Password</label>
+                                        <input type="password" name="password" class="form-control" placeholder="Leave blank to keep current" />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label>Company</label>
+                                        <input type="text" name="company" class="form-control" value="@user.Company" />
+                                    </div>
+                                    <div class="mb-3">
+                                        <label>Branch</label>
+                                        <input type="text" name="branch" class="form-control" value="@user.Branch" />
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-success">Save Changes</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Delete Modal -->
+                <div class="modal fade" id="deleteUserModal-@user.Id" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <form asp-action="Delete" method="get">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Delete User: @user.Username</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Are you sure you want to delete <strong>@user.Username</strong>?</p>
+                                    <input type="hidden" name="id" value="@user.Id" />
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn btn-danger">Yes, Delete</button>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            }
+        </tbody>
+    </table>
+</div>
+
+<!-- Add User Modal -->
+
+<div class="modal fade" id="addUserModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form asp-action="Register" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add User</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label>Username</label>
+                        <input type="text" name="username" class="form-control" required />
+                    </div>
+                    <div class="mb-3">
+                        <label>Password</label>
+                        <input type="password" name="password" class="form-control" required />
+                    </div>
+                    <div class="mb-3">
+                        <label>Company</label>
+                        <input type="text" name="company" class="form-control" />
+                    </div>
+                    <div class="mb-3">
+                        <label>Branch</label>
+                        <input type="text" name="branch" class="form-control" />
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Add User</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

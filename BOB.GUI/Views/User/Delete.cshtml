@@ -1,0 +1,14 @@
+﻿@model BOB.Shared.Entities.Users
+@{
+    ViewData["Title"] = "Delete User";
+}
+
+<h2>Delete User</h2>
+
+<p>Are you sure you want to delete user <strong>@Model.Username</strong>?</p>
+
+<form asp-action="Delete" method="get">
+    <input type="hidden" name="id" value="@Model.Id" />
+    <button type="submit" class="btn btn-danger">Yes, Delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
