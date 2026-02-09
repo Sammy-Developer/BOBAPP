@@ -13,7 +13,7 @@ namespace BOB.Shared.Entities
         public string PassHash { get; set; } 
 
         public string PassKey { get; set; }
-        bool ERPUser { get; set; }
+       public bool ERPUser { get; set; }
 
         public string Company { get; set; } = string.Empty;
         public string Branch { get; set; } = string.Empty;

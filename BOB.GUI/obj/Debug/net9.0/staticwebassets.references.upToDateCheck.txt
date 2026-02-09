@@ -1,0 +1,2 @@
+D:\Kayreed\BOBAPP\BOB.Server\obj\Debug\net9.0\staticwebassets.build.json
+D:\Kayreed\BOBAPP\BOB.Server\obj\Debug\net9.0\staticwebassets.build.json
